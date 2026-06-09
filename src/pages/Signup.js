@@ -11,6 +11,7 @@ function Signup({setPage}) {
             setError(
                 'Please fill all fields'
             )
+            return
         }
         setError('')
         alert('Signup Successfull !')
@@ -43,7 +44,7 @@ function Signup({setPage}) {
 
 
         <button onClick={handleSignup}>Signup</button>
-        
+
         <p>
             Already have an account ?  
             <span  className='link' onClick={()=>setPage('login')}

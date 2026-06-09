@@ -9,6 +9,7 @@ function ResetPassword({setPage}){
             setError(
                 'please enter your email'
             )
+            return
         }
         setError('')
         alert('Password Reset Link Sent !')
@@ -28,7 +29,7 @@ function ResetPassword({setPage}){
       <br />
 
       <button onClick={handleReset}>Reset Password</button>
-      
+
       <p className='link' onClick={()=>setPage('login')}
       style={{cursor:'pointer' , color:'blue' }}>
         Back to Login
